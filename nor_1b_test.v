@@ -15,6 +15,8 @@ module nor_1b_test;
     # 10 x = 1; y = 1;
     # 10 $finish;
   end
+
+  nor_1b a0 (x, y, o);
   
   initial begin
     $dumpfile("nor_1b.vcd"); //waveform
