@@ -15,6 +15,8 @@ module nand_1b_test;
     # 10 x = 1; y = 1;
     # 10 $finish;
   end
+
+  nand_1b a0 (x, y, o);
   
   initial begin
     $dumpfile("nand_1b.vcd"); //waveform
