@@ -1,6 +1,6 @@
 module not_1b_test;
 
-  //clock pulses every 5 seconds
+  //clock 
   reg clk = 0;
   always #5 clk = !clk;
   
