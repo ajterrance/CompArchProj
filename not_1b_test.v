@@ -1,19 +1,17 @@
 module not_1b_test;
 
-  //clock
+  //clock pulses every 5 seconds
   reg clk = 0;
   always #5 clk = !clk;
   
-  reg x = 0;
-  wire o;
+  reg x = 0;  //input
+  wire o;     //output
   
   initial begin
     # 10 x = 1;
     # 10 x = 0;
     # 10 $finish;
   end
-
-  not_1b a0 (x, o);
   
   initial begin
     $dumpfile("not_1b.vcd"); //waveform
