@@ -1,0 +1,57 @@
+$date
+	Thu Jul 11 18:20:34 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module nand_1b_test $end
+$var reg 1 ! clk $end
+$upscope $end
+$scope module nand_1b_test $end
+$var reg 1 " x $end
+$upscope $end
+$scope module nand_1b_test $end
+$var reg 1 # y $end
+$upscope $end
+$scope module nand_1b_test $end
+$var wire 1 $ o $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1$
+0#
+0"
+0!
+$end
+#5
+1!
+#10
+0!
+#15
+1!
+#20
+0!
+1"
+#25
+1!
+#30
+0!
+1#
+0"
+#35
+1!
+#40
+0$
+0!
+1"
+#45
+1!
+#50
+0!
