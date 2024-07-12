@@ -12,6 +12,8 @@ module not_1b_test;
     # 10 x = 0;
     # 10 $finish;
   end
+
+  not_1b a0 (x, o);
   
   initial begin
     $dumpfile("not_1b.vcd"); //waveform
