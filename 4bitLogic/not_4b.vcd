@@ -1,0 +1,56 @@
+$date
+	Fri Jul 19 22:03:33 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module not_4b_test $end
+$var reg 1 ! clk $end
+$upscope $end
+$scope module not_4b_test $end
+$var reg 4 " A [3:0] $end
+$upscope $end
+$scope module not_4b_test $end
+$var wire 4 # Y [3:0] $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx #
+bx "
+0!
+$end
+#5
+1!
+#10
+b11 #
+0!
+b1100 "
+#15
+1!
+#20
+b1100 #
+0!
+b11 "
+#25
+1!
+#30
+b0 #
+0!
+b1111 "
+#35
+1!
+#40
+b1110 #
+0!
+b1 "
+#45
+1!
+#50
+0!
