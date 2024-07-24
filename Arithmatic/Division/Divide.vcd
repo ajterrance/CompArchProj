@@ -1,0 +1,58 @@
+$date
+	Sun Jul 21 13:42:56 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Tdivide $end
+$var wire 8 ! result [7:0] $end
+$var reg 4 " A [3:0] $end
+$var reg 4 # B [3:0] $end
+$scope module divider_inst $end
+$var wire 4 $ A [3:0] $end
+$var wire 4 % B [3:0] $end
+$var reg 4 & numerator [3:0] $end
+$var reg 4 ' remainder [3:0] $end
+$var reg 8 ( result [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10010 (
+b10 '
+b1 &
+b11 %
+b101 $
+b11 #
+b101 "
+b10010 !
+$end
+#10
+b1010000 !
+b1010000 (
+b0 '
+b101 &
+b10 #
+b10 %
+b1010 "
+b1010 $
+#20
+b10 !
+b10 (
+b10 '
+b0 &
+b111 #
+b111 %
+b10 "
+b10 $
+#30
+b0 !
+b0 (
+b0 '
+b0 #
+b0 %
+#40

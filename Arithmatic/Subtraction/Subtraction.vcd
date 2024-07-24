@@ -1,0 +1,44 @@
+$date
+	Sun Jul 21 03:09:04 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Tsubtraction $end
+$var wire 4 ! sum [3:0] $end
+$var reg 4 " A [3:0] $end
+$var reg 4 # B [3:0] $end
+$scope module adder_inst $end
+$var wire 4 $ A [3:0] $end
+$var wire 4 % B [3:0] $end
+$var reg 4 & sum [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 &
+b11 %
+b101 $
+b11 #
+b101 "
+b10 !
+$end
+#10
+b1000 !
+b1000 &
+b10 #
+b10 %
+b1010 "
+b1010 $
+#20
+b1011 !
+b1011 &
+b111 #
+b111 %
+b10 "
+b10 $
+#30
