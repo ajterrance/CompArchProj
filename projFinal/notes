@@ -1,0 +1,18 @@
+NOTES
+
+iverilog -o alu alu.v alu_test.v Addition.v and_4b.v Divide.v Multiplier.v nand_4b.v nor_4b.v not_4b.v or_4b.v shifter_4b.v Subtraction.v xnor_4b.v xor_4b.v
+vvp alu
+
+OPCODES:
+0000: NOT
+0001: AND
+0010; NAND
+0011: OR
+0100: NOR
+0101: XOR
+0110: XNOR
+0111: SHIFTER
+1000: ADDITION
+1001: SUBTRACTION
+1010: MULTIPLICATION
+1011: DIVISION
