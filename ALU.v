@@ -1,14 +1,14 @@
 module alu (
     	input [3:0] a,           // 4-bit input A
     	input [3:0] b,           // 4-bit input B
-    	input [2:0] op_code,     // Operation code to select the ALU operation
+    	input [3:0] op_code,     // Operation code to select the ALU operation
     	output reg [3:0] result, // 4-bit result
 );
 
-
-    	wire [3:0] Addition, Subtraction, Divider, Multiplication, 
-    	and_result, nand_result, nor_result, not_result, or_result, xor_result,	
-    	xnor_result, shiftreg_result;
+	wire [7:0] Divider, Multiplication
+	
+    	wire [3:0] Addition, Subtraction, and_result, nand_result, nor_result,
+    	not_result, or_result, xor_result, xnor_result, shiftreg_result;
     	
     	wire nand1b_result, nor1b_result, not1b_result;
 
@@ -103,16 +103,42 @@ module alu (
     	
     	always @(*) begin
         	case (op_code)
-            		3'b000: begin
-                	result = add_result;
+            		4'b0000: begin
+                	result = not_result;
             	end
-            		3'b001: begin
-                	result = sub_result;
-            	end
-            		3'b010: begin
+            		4'b0001: begin
                 	result = and_result;
             	end
-            	// Add more cases for other operations
+            		4'b0010: begin
+                	result = nand_result;
+            	end
+            		4'b0011: begin
+                	result = or_result;
+            	end
+            		4'b0100: begin
+                	result = nor_result;
+            	end
+            		4'b0101: begin
+                	result = xor_result;
+            	end
+            	        4'b0110: begin
+                	result = xnor_result;
+            	end
+            	        4'b0111: begin
+                	result = shift_result;
+            	end
+            	        4'b1000: begin
+                	result = Addition;
+            	end
+            	        4'b1001: begin
+                	result = Subtraction;
+            	end
+            	        4'b1010: begin
+                	result = Multiplication;
+            	end
+            	        4'b1011: begin
+                	result = Devision;
+            	end
             	default: begin
                 	result = 4'b0000;
             	end
