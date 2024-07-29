@@ -137,7 +137,7 @@ module alu (
                 	result = Multiplication;
             	end
             	        4'b1011: begin
-                	result = Devision;
+                	result = Divider;
             	end
             	default: begin
                 	result = 4'b0000;
