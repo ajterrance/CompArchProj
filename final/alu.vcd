@@ -1,0 +1,376 @@
+$date
+	Mon Jul 29 20:48:49 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_test $end
+$var wire 8 ! product [7:0] $end
+$var wire 4 " o [3:0] $end
+$var reg 1 # clk $end
+$var reg 4 $ opcode [3:0] $end
+$var reg 4 % x [3:0] $end
+$var reg 4 & y [3:0] $end
+$scope module a0 $end
+$var wire 4 ' opcode [3:0] $end
+$var wire 4 ( x [3:0] $end
+$var wire 4 ) y [3:0] $end
+$var wire 4 * xor_output [3:0] $end
+$var wire 4 + xnor_output [3:0] $end
+$var wire 4 , sub_output [3:0] $end
+$var wire 4 - shift_output [3:0] $end
+$var wire 4 . or_output [3:0] $end
+$var wire 4 / not_output [3:0] $end
+$var wire 4 0 nor_output [3:0] $end
+$var wire 4 1 nand_output [3:0] $end
+$var wire 8 2 mult_output [7:0] $end
+$var wire 8 3 div_output [7:0] $end
+$var wire 4 4 and_output [3:0] $end
+$var wire 4 5 add_output [3:0] $end
+$var reg 4 6 o [3:0] $end
+$var reg 8 7 product [7:0] $end
+$scope module add8 $end
+$var wire 4 8 A [3:0] $end
+$var wire 4 9 B [3:0] $end
+$var reg 4 : sum [3:0] $end
+$upscope $end
+$scope module and0 $end
+$var wire 4 ; o [3:0] $end
+$var wire 4 < x [3:0] $end
+$var wire 4 = y [3:0] $end
+$upscope $end
+$scope module div10 $end
+$var wire 4 > A [3:0] $end
+$var wire 4 ? B [3:0] $end
+$var reg 4 @ numerator [3:0] $end
+$var reg 4 A remainder [3:0] $end
+$var reg 8 B result [7:0] $end
+$upscope $end
+$scope module mult11 $end
+$var wire 4 C A [3:0] $end
+$var wire 4 D B [3:0] $end
+$var reg 8 E Product [7:0] $end
+$upscope $end
+$scope module nand1 $end
+$var wire 4 F x [3:0] $end
+$var wire 4 G y [3:0] $end
+$var wire 4 H o [3:0] $end
+$upscope $end
+$scope module nor3 $end
+$var wire 4 I x [3:0] $end
+$var wire 4 J y [3:0] $end
+$var wire 4 K o [3:0] $end
+$upscope $end
+$scope module not6 $end
+$var wire 4 L A [3:0] $end
+$var wire 4 M Y [3:0] $end
+$upscope $end
+$scope module or2 $end
+$var wire 4 N o [3:0] $end
+$var wire 4 O x [3:0] $end
+$var wire 4 P y [3:0] $end
+$upscope $end
+$scope module shifter7 $end
+$var wire 4 Q A [3:0] $end
+$var wire 4 R B [3:0] $end
+$var reg 4 S X [3:0] $end
+$var reg 4 T Y [3:0] $end
+$upscope $end
+$scope module sub9 $end
+$var wire 4 U A [3:0] $end
+$var wire 4 V B [3:0] $end
+$var reg 4 W sum [3:0] $end
+$upscope $end
+$scope module xnor5 $end
+$var wire 4 X A [3:0] $end
+$var wire 4 Y B [3:0] $end
+$var wire 4 Z Y [3:0] $end
+$upscope $end
+$scope module xor4 $end
+$var wire 4 [ A [3:0] $end
+$var wire 4 \ B [3:0] $end
+$var wire 4 ] Y [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 ]
+b0 \
+b0 [
+b1111 Z
+b0 Y
+b0 X
+b0 W
+b0 V
+b0 U
+b0 T
+b0 S
+b0 R
+b0 Q
+b0 P
+b0 O
+b0 N
+b1111 M
+b0 L
+b1 K
+b0 J
+b0 I
+b1 H
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b0 :
+b0 9
+b0 8
+bx 7
+b1111 6
+b0 5
+b0 4
+b0 3
+b0 2
+b1 1
+b1 0
+b1111 /
+b0 .
+b0 -
+b0 ,
+b1111 +
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+0#
+b1111 "
+bx !
+$end
+#5
+1#
+#10
+0#
+#15
+1#
+#20
+b0 +
+b0 Z
+b0 "
+b0 6
+b111 T
+b1111 5
+b1111 :
+b1 ,
+b1 W
+b0 0
+b0 K
+b1111 .
+b1111 N
+b1111 *
+b1111 ]
+0#
+b1 $
+b1 '
+b1111 &
+b1111 )
+b1111 9
+b1111 =
+b1111 ?
+b1111 D
+b1111 G
+b1111 J
+b1111 P
+b1111 R
+b1111 V
+b1111 Y
+b1111 \
+#25
+1#
+#30
+b1 "
+b1 6
+0#
+b10 $
+b10 '
+#35
+1#
+#40
+b1111 "
+b1111 6
+0#
+b11 $
+b11 '
+#45
+1#
+#50
+b0 "
+b0 6
+0#
+b100 $
+b100 '
+#55
+1#
+#60
+b1111 "
+b1111 6
+0#
+b101 $
+b101 '
+#65
+1#
+#70
+b1111 +
+b1111 Z
+b1111 "
+b1111 6
+b0 ,
+b0 W
+b0 5
+b0 :
+b0 T
+b1 0
+b1 K
+b0 .
+b0 N
+b0 *
+b0 ]
+0#
+b110 $
+b110 '
+b0 &
+b0 )
+b0 9
+b0 =
+b0 ?
+b0 D
+b0 G
+b0 J
+b0 P
+b0 R
+b0 V
+b0 Y
+b0 \
+#75
+1#
+#80
+b0 +
+b0 Z
+b0 "
+b0 6
+b111 T
+b1111 5
+b1111 :
+b1 ,
+b1 W
+b0 0
+b0 K
+b1111 .
+b1111 N
+b1111 *
+b1111 ]
+0#
+b111 $
+b111 '
+b1111 &
+b1111 )
+b1111 9
+b1111 =
+b1111 ?
+b1111 D
+b1111 G
+b1111 J
+b1111 P
+b1111 R
+b1111 V
+b1111 Y
+b1111 \
+#85
+1#
+#90
+b1111 "
+b1111 6
+0#
+b1000 $
+b1000 '
+#95
+1#
+#100
+b1 "
+b1 6
+0#
+b1001 $
+b1001 '
+#105
+1#
+#110
+b1111 +
+b1111 Z
+b11100001 !
+b11100001 7
+b11100001 2
+b11100001 E
+b0 ,
+b0 W
+b1110 5
+b1110 :
+b111 T
+b1111 -
+b1111 S
+b1111 4
+b1111 ;
+b10000 3
+b10000 B
+b1 @
+b0 1
+b0 H
+b0 /
+b0 M
+b0 *
+b0 ]
+0#
+b1010 $
+b1010 '
+b1111 %
+b1111 (
+b1111 8
+b1111 <
+b1111 >
+b1111 C
+b1111 F
+b1111 I
+b1111 L
+b1111 O
+b1111 Q
+b1111 U
+b1111 X
+b1111 [
+#115
+1#
+#120
+b10000 !
+b10000 7
+0#
+b1011 $
+b1011 '
+#125
+1#
+#130
+0#
